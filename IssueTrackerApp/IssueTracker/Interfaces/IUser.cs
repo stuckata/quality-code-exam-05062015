@@ -8,5 +8,9 @@ namespace IssueTracker.Interfaces
 {
     public interface IUser
     {
+        void CreateIssue();
+        void DeleteIssue();
+        void SearchForIssue();
+        void AddIssueComment();
     }
 }
