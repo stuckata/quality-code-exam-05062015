@@ -10,15 +10,17 @@ namespace IssueTracker.Models
     public class Issue
     {
         private int id = 0;
+        private User author;
         private string title;
         private string description;
         private Priority priorityType;
         private IList<string> tags;
-        private IList<string> comments;
+        private IList<Comment> comments;
 
-        public Issue(string title, string description, Priority priorityType, IList<string> tags, IList<string> comments)
+        public Issue(User author, string title, string description, Priority priorityType, IList<string> tags, IList<string> comments)
         {
             this.Id++;
+            this.Author = author;
             this.Title = title;
             this.Description = description;
             this.PriorityType = priorityType;
@@ -35,6 +37,18 @@ namespace IssueTracker.Models
             set
             {
                 this.id = value;
+            }
+        }
+
+        public User Author
+        {
+            get
+            {
+                return this.author;
+            }
+            set
+            {
+                this.author = value;
             }
         }
 

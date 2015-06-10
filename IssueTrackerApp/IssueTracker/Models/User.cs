@@ -75,7 +75,7 @@ namespace IssueTracker.Models
 
         }
 
-        public void DeleteIssue()
+        public void DeleteIssue(int issueId)
         {
 
         }
