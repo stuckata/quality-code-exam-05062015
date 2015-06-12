@@ -8,8 +8,9 @@ namespace IssueTracker
 {
     public class IssueTrackerProgram
     {
-        static void Main()
+        public static void Main()
         {
+            
         }
     }
 }

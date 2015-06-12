@@ -17,7 +17,7 @@ namespace IssueTracker.Models
         private IList<string> tags;
         private IList<Comment> comments;
 
-        public Issue(User author, string title, string description, Priority priorityType, IList<string> tags, IList<string> comments)
+        public Issue(User author, string title, string description, Priority priorityType, IList<string> tags, IList<Comment> comments)
         {
             this.Id++;
             this.Author = author;
@@ -100,7 +100,7 @@ namespace IssueTracker.Models
             }
         }
 
-        public IList<string> Comments
+        public IList<Comment> Comments
         {
             get
             {
